@@ -1,0 +1,207 @@
+@media screen and (max-width:768px) {
+
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /*Cabeçalho Menu Mobile*/
+        .nav-list{
+            position: absolute;
+            top: 18vh;
+            right: 0;
+            width: 40vw;
+            height: 65vh;
+            background-color: #7816b7;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transform: translateX(100%);
+            font-size: 20px;
+            gap: 0;
+            display: none;
+            transition: transform 0.3s ease-in;
+        }
+        .nav-list li{
+            margin-left: 0;
+            opacity: 0;
+        }
+        .mobile-menu{
+            display: block;
+        }
+        .nav-list.active{
+            transform: translateX(0);
+            display: flex;
+        }
+        .nav-link li{
+            display: none;
+            gap: 300px;
+        }
+        .home{
+            width: 100%;
+            height: 150px;
+            justify-content: space-between;
+            gap: 130px;
+        }
+        .logo{
+            width: 40px;
+            margin-left: 55px;
+        }
+        .mobile-menu .nav-list{
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            text-align: center;
+            padding-top: 0px;
+            font-size: 20px;
+            background-color: #7816b7;
+            width:115px;
+            border-radius: 10px;
+            margin-top: 255px;
+        }
+        .mobile-menu .link{
+            justify-content:right;
+            display: block;
+            margin:10px;
+        }
+
+    /*Imagem de título "mritadsgn"*/
+        .title{
+            font-size: 40px;
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 280px;
+        }
+
+    /*Texto com efeito Typing*/
+        .typing{
+            width:335px;
+            font-size: 18px;
+            border-right: 1px solid #000;
+            margin-bottom: 20px;
+        }
+    
+    /*Títulos da página de projetos*/
+        #title-projetos{
+            font-size: 20px;
+            width: 190px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #title-projetos-idv{
+            font-size: 20px;
+            width: 220px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #projetos{
+            font-size: 28px;
+            width: 220px;
+            height: 50px;
+            border-radius: 40px;
+            margin-bottom: 0
+        }
+
+    /*Parágrafo*/
+        .paragraph{
+            font-size: 20px;
+            margin: 30px;
+            text-align: left;
+        }
+
+    /*Projetos*/
+        .container-projetos .Projeto .CTG{
+            width: 100%;
+            height: 100%;
+        }
+        .projeto{
+            width: 300px;
+        }
+        .ideb{
+            margin-top: 10px;
+        }
+
+    /*Botão mostrar projetos*/
+        .caixa-projetos .btn-mostrar-projetos{
+            width: 180px;
+            height: 60px;
+            font-size: 20px;
+        }
+        .caixa-projetos .btn-mostrar-projetos-sm{
+            width: 180px;
+            height: 60px;
+            font-size: 20px;
+        }
+
+    /*Informações dos projetos (hover)*/
+        .informacoes-projeto {
+            font-size:20px;
+            padding:30px;
+            text-align:center;
+        }
+        .informacoes-projeto:hover {
+            opacity: 1;
+        }
+
+    /*Página de contatos*/
+        .contato{
+            padding: 100px 0 100px 0
+        }
+        #contato{
+            font-size: 30px;
+            width: 285px;
+        }
+        .contato .paragraph{
+            font-size: 25px;
+        }
+        .contato li{
+            padding: 11px;
+            border: 3px dashed #6800ff;
+            font-family: 'Alata', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6800ff;
+            font-size: 16px;
+            border-radius: 30px;
+        }
+        .contato ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+        }
+        #email{
+            width: 350px;
+            justify-content: center;
+        }
+        #email img{
+            width: 30px
+        }
+        #whatsapp{
+            width: 350px;
+            justify-content: center;
+        }
+        #whatsapp img{
+            width: 30px;
+        }
+
+    /*Rodapé - footer*/
+        .rodape{
+            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+        .rodape a{
+            font-size: 20px;
+        }
+        .redes-sociais{
+            padding: 20px
+        }
+        .redes-sociais ul{
+            gap: 24px
+        }
+}

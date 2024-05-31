@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.informacoes{
+    background: #fff;
+}
+header{
+    background-color: #7816b7;
+}
+ /*Cabeçalho */
+    .home{
+        justify-content:space-around;
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+        list-style: none;
+        font-family: 'Poppins', Arial, sans-serif;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-list{
+        display: flex;
+        gap: 3rem;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.8rem;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 60px;
+        position: relative;
+    }
+    .nav-list a{
+        color:#fff;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .nav-list a:hover{
+        color: #240057;
+    }
+
+/*Imagem de título "mritadsgn"*/
+    .title{
+        width: 100%;
+        width: 400px;
+        align-items: center;
+        background: transparent;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 0;
+        display: block;
+        text-align: center;
+    }
+
+/*Texto com efeito Typing*/
+    .typing{
+        width: 558px;
+        animation: typing 2.5s steps(30), blink .5s step-end infinite alternate;
+        font-family: 'Poppins', Arial, sans-serif;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #000;
+        font-size: 30px;
+        color: #240057;
+        margin: 0 auto;
+    }
+
+/*Parágrafo*/
+    .paragraph{
+        font-size: 30px;
+        font-family: 'Poppins', Arial, sans-serif;
+        text-align: left;
+        margin: 80px;
+        color: #212121;
+    }
+
+ /*Página dos projetos*/
+    .caixa-projetos{
+        margin-top: 55px;
+        padding: 150px 0 150px 0;
+        background-color: #212121
+    }
+    .container-projetos .projeto {
+        max-width: 300px;
+        position: relative;
+        display: none;
+    }
+    .container-projetos .projeto img {
+        width: 100%;
+    }
+    .container-projetos .project {
+        max-width: 300px;
+        position: relative;
+        display: none;
+    }
+    .container-projetos .project img {
+        height: 100%;
+    }
+    .container-projetos .Projeto {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        display: none;
+    }
+    .container-projetos .Projeto img {
+        width: 100%;
+    }
+
+ /*Projetos*/
+    .projeto{
+        width: 300px;
+        margin: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.433);
+    }
+    .project{
+        width: 300px;
+        margin: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.433)
+    }
+    .Projeto{
+        width: 530px;
+        height: 100%;
+        margin: 25px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.433)
+    }
+    .container-projetos .Projeto .CTG{
+        width: 530px;
+        height: 300px;
+    }
+    .ideb{
+        height: 100%;
+        margin-top: 45px;
+    }
+    .container-projetos .projeto.ativo {
+        display: block;
+    }
+    .container-projetos .project.actived {
+        display: block;
+    }
+    .container-projetos .Projeto.Ativo {
+        display: block;
+    }
+    .container-projetos {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+      }
+
+.espacamento{
+    padding: 150px
+}
+
+  /*Botão mostrar projetos*/
+    .caixa-projetos .btn-mostrar-projetos {
+        background: none;
+        border: 1px solid #ffff;
+        border-radius: 40px;
+        color: #ffff;
+        width: 230px;
+        height: 70px;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top:50px;
+        margin-bottom: 20px;
+    }
+
+    .caixa-projetos .btn-mostrar-projetos-sm {
+        background: none;
+        border: 1px solid #ffff;
+        border-radius: 40px;
+        color: #ffff;
+        width: 230px;
+        height: 70px;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top:50px;
+        margin-bottom: 20px;
+    }
+    .caixa-projetos .btn-mostrar-projetos:hover{
+        background-color: #ffffff2a;
+        transition: 0.3s;
+    }
+      
+    .caixa-projetos .btn-mostrar-projetos.remover {
+        display: none;
+    }
+    
+    .caixa-projetos .btn-mostrar-projetos-sm:hover {
+        background-color: #ffffff2a;
+        transition: 0.3s;
+    }
+      
+    .caixa-projetos .btn-mostrar-projetos-sm.remover {
+        display: none;
+    }
+
+/*Título da página de projetos*/
+    #projetos{
+        font-size: 50px;
+        font-family: 'Poppins', Arial, sans-serif;
+        width: 450px;
+        height: 80px;
+        color: #ffff;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+    #title-projetos{
+        font-size: 30px;
+        font-family: 'Poppins', Arial, sans-serif;
+        color: #ce88ff;
+        border: 3px dotted #ce88ff;
+        width: 300px;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+    #title-projetos-idv{
+        font-size: 30px;
+        font-family: 'Poppins', Arial, sans-serif;
+        color: #ce88ff;
+        border: 3px dotted #ce88ff;
+        width: 360px;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+
+/*Informações dos projetos (hover)*/
+    .informacoes-projeto {
+        background-color: #040203;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size:20px;
+        font-weight: 600;
+        opacity: 0;
+        transition: 0.3s;
+        padding:30px;
+    }
+    .informacoes-projeto p{
+        font-family: 'Alata', Arial, sans-serif;
+    }
+    .informacoes-projeto:hover {
+        opacity: 0.7;
+        background-color: #0000008b;
+    }
+
+/*Página de contatos*/
+    .contato{
+        background-color: #fff;
+        padding: 200px 0 200px 0;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .contato a{
+        color: #6800ff;
+    }
+    .contato .paragraph{
+        color: #6800ff
+    }
+    #contato{
+        font-size: 40px;
+        font-family: 'Poppins', Arial, sans-serif;
+        width: 400px;
+        color: #6800ff;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        border-bottom: 1px solid #6800ff;
+        overflow: hidden;
+    }
+    .contato li{
+        width: 250px;
+        padding: 11px;
+        border: 5px dashed #6800ff;
+        font-family: 'Alata', Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #6800ff;
+        font-size: 30px;
+        border-radius: 30px;
+    }
+    .contato ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .contato .paragraph{
+        text-align: center;
+    }
+    #email{
+        width: 570px;
+        justify-content: center;
+    }
+    #whatsapp{
+        width: 570px;
+        justify-content: center;
+    }
+
+/*menu mobile*/
+    .mobile-menu-icon{
+        background-color: transparent;
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-list li {
+        letter-spacing: 3px;
+        margin-left: 32px;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+        display: none;
+    }
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        margin: 8px;
+        transition: 0.3s;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Poppins', Arial, sans-serif;
+        background: transparent;
+        height: 23vh;
+        width: 100vh;
+    }
+
+/*Barrinhas do menu mobile*/
+    .mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+/*Rodapé - footer*/
+    .redes-sociais{
+        padding: 40px;
+        background-color: #480081;
+    }
+    .redes-sociais li{
+        width: 47px;
+        height: 47px;
+        padding: 11px;
+        list-style: none;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: 0.2s;
+    }
+    .redes-sociais li:hover{
+        transform: scale(1.5);
+    }
+    .redes-sociais ul{
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .rodape a{
+        font-size: 20px;
+        font-family: 'Poppins', Arial, sans-serif;
+        color: #fff;
+        align-items: center;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+    .rodape a:hover{
+        color: #212121;
+    }
+    .rodape{
+        background-color: #480081;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 44px;
+    }
+
+/*Barra de rolagem personalizada*/
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #6800ff;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: white;
+    }
+
+/*Funções de efeitos*/
+    @keyframes typing{
+        from{
+            width: 0
+        }
+    }
+
+    @keyframes blink{
+        50%{
+            border-color: transparent
+        }
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    }
